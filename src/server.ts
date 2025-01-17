@@ -1,15 +1,10 @@
-import express, { Request, Response } from "express";
+import express from "express";
 
 const startServer = async () => {
   try {
     const app = express();
     app.use(express.json());
     const port = 3000;
-
-    app.post("/user", (req: Request, res: Response) => {
-      console.log(req.body);
-      res.json(req.body);
-    });
 
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
