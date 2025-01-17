@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "api_one_piece": "file:",
     "express": "^4.21.2"
   },
   "devDependencies": {
